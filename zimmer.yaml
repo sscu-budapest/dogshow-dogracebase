@@ -1,2 +1,9 @@
-name: tempartifact
+name: dogracebase
 version: v0.0
+registry: git@github.com:sscu-budapest/dogshow-registry
+imported_projects:
+  - dogshowbase  # can be either list or dict
+envs:
+  complete:
+    params:
+      data_root: https://raw.githubusercontent.com/sscu-budapest/datazimmer/main/dogshow/data
