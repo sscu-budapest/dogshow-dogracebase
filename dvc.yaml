@@ -1,0 +1,11 @@
+stages:
+  complete-core:
+    cmd: datazimmer run-step complete-core
+    deps:
+    - src/core.py
+    params:
+    - zimmer.yaml:
+      - envs.complete.params.data_root
+    outs:
+    - data/dogracebase/core/complete:
+        persist: true

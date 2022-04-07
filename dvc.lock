@@ -1,0 +1,16 @@
+schema: '2.0'
+stages:
+  complete-core:
+    cmd: datazimmer run-step complete-core
+    deps:
+    - path: src/core.py
+      md5: 905d78c3c59e81680f22fab743293a94
+      size: 2667
+    params:
+      zimmer.yaml:
+        envs.complete.params.data_root: https://raw.githubusercontent.com/sscu-budapest/datazimmer/main/dogshow/data
+    outs:
+    - path: data/dogracebase/core/complete
+      md5: 99c44e25bf857bccbbce61d4af14ba2e.dir
+      size: 65705
+      nfiles: 16
